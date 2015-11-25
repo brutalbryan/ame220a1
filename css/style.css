@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/********************************************************************************************************************/
+
+#wrapper {
+    width: auto;
+    height: auto;
+
+}
+
+#header {
+    width: 100%;
+    height: 130px; /* change based on the background image's pixel height */
+ /* Update image */
+
+}
+
+#login
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 1000px;
+    top: 0px;
+    background: rgba(0,0,0,.7);
+    transition: 1s;
+    z-index: 3;
+}
+#loginHead{
+    height: 11%
+}
+#loginForm {
+    color: white;
+    width: 45%;
+    margin: auto;
+    font-size: 95%;
+    text-align: left;
+    padding-left: 8px;
+    line-height: 1.9em;
+    border: 5px double #4169e1;
+    background-color: rgb(57,57,57);
+    border-radius: 15px;
+    box-shadow: 5px    5px   3px  3px  rgba(25,75,75,.4);
+    /*            H    V     B    S      opacity */
+}
+
+.fh1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 11em;
+    float: left;
+    text-align: left;
+    padding-left: 30px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 195px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+input:not([type=submit]):not([type=checkbox]):not([type=reset]) {
+    background: #fff no-repeat top right;
+}
+
+input:not([type=submit]):not([type=checkbox]):required {
+    background-image: url("../images/required.png");
+}
+
+input:not([type=submit]):not([type=checkbox]):valid {
+    background-image: url("../images/valid.png");
+}
+
+input:not([type=submit]):not([type=checkbox]):focus:invalid {
+    background-image: url("../images/invalid.png");
+}
+
+
+
+
+select {
+    width: 205px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+select:required { background: #ff0; }
+select:valid { background: #fff; }
+select:focus:invalid { background: #f00; }
+
+
+.submit {text-align: center;}
+
+.submit input{
+    width: 120px;
+    color: rgb(204,204,204);
+    font-size: 90%;
+    background-color: rgb(57,57,57);
+    box-shadow: 2px 2px 0px 0px rgba(57,57,57,0.04);
+    border-radius: 8px;
+
+}
+
+#merchList{
+    font-size: 0;
+    width: 700px; /* Go back and change one you have the image size x3 (for each column of)*/
+    margin: 0 auto;
+
+}
+
+.populate  a{
+    margin: 4px;
+    border: 4px solid transparent;
+    display: inline-block;
+    opacity: 0;
+
+
+    transform: translateX(20px);
+    webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.populate{
+    opacity: 1;
+        transform: translateX(0px);
+}
+#merchList a:hover{
+    border: rgb(206,78,45);
+    
+}
+/******************************************************************************
+*                                                                             *
+*        The code from lines 47 - 81 was created by: Ganeshji Marwaha         *
+*                                                                             *
+* Source: http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers  *
+*                                                                             *
+*******************************************************************************/
+
+
+.menu {
+    position: fixed;
+    height: 33px;
+    width: 40%;
+    background-color: rgb(57,57,57);
+    right: 45px;
+    margin: 10px 0;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+}
+.menu li.back {
+    border: 1px solid rgb(255,255,255);
+    background-color: rgb(57,57,57);
+    width: 9px;
+    height: 30px;
+    z-index: 8;
+    position: absolute;
+}
+.menu li a {
+    /*font: bold 14px arial; */
+    text-decoration: none;
+    color: white;
+    outline: none;
+    text-align: center;
+    top: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    z-index: 10;
+    display: block;
+    float: left;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto 10px;
+}
+.menu li a:hover, .menu li a:active, .menu li a:visited {
+    border: none;
+}
+
+
+
+/********************************************************************************************************************/
+.image {
+    height: 750px;
+    width: 100%;
+    background: #55e6c5;
+    z-index: 1;
+
+    }
+
+.content {
+    height: 750px;
+    width:100%;
+    background-color: rgb(0,0,0);
+    z-index: 2;
+}
+.content h1 {
+    font-size: 40px;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 30px 60px;
+}
+.content p {
+    font-size:20px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 30px 60px;
+}
+#bg_1 {
+    background: url(../Images/bg1.jpeg);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,.9);
+}
+#bg_2 {
+    background: url(../Images/poo.png) repeat;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,.9);
+
+}
+#bg_3 {
+    background: url(../Images/roster.png) repeat;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,.9);
+    background-attachment: fixed;
+}
+#bg_4 {
+    background: url(../Images/mh.png) repeat;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,.9);
+    background-attachment: fixed;
+}
+
+
+
+#nav {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(57,57,57,1);
+    z-index: 100;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+}
+#nav #logo {
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto 100px;
+}
+
+#nav #logo img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+#home_content {position: relative;}
+
+h1::first-letter {
+    font-size: 62px;
+    font-weight: 620;
+    color:rgb(60,176,248);
+}
